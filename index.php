@@ -436,38 +436,31 @@
                         class="form-website-hero bg-[#FAFAFA] rounded-lg z-[2] p-6 mt-2 w-full max-w-md mx-auto shadow-lg">
                         <p class="text-center mb-4 text-xl font-bold">Ready to innovate?<br /><span
                                 class="text-blue-500">Let's get in touch</span></p>
-                        <form method="POST" action="../backend/action/action">
-                            <input type="hidden" name="type" value="serviceForm">
+                        <form>
                             <div class="mt-4">
+                                <div class="form-group w-full mb-4"><input type="text" id="name"
+                                        class="w-full p-2 border border-gray-300 rounded" placeholder="Your Name"
+                                        required="" name="name" value="" /></div>
+                                <div class="form-group w-full mb-4"><input type="email" id="email"
+                                        class="w-full p-2 border border-gray-300 rounded" placeholder="Your Email"
+                                        required="" name="email" value="" /></div>
                                 <div class="form-group w-full mb-4">
-                                    <input type="text" class="w-full p-2 border border-gray-300 rounded"
-                                        placeholder="Your Name" name="name" required />
+                                    <input type="tel" id="phoneNumber" class="w-3/4 p-2 border border-gray-300 rounded"
+                                        placeholder="Phone Number" required="" name="phoneNumber" value="" />
                                 </div>
-                                <div class="form-group w-full mb-4">
-                                    <input type="email" class="w-full p-2 border border-gray-300 rounded"
-                                        placeholder="Your Email" name="email" required />
-                                </div>
-                                <div class="form-group w-full mb-4">
-                                    <input type="tel" class="w-3/4 p-2 border border-gray-300 rounded"
-                                        placeholder="Phone Number" name="phone" required />
-                                </div>
-                                <div class="form-group w-full mb-4">
-                                    <select name="service" class="w-full p-2 border border-gray-300 rounded"
-                                        required="">
-                                        <option value="" selected disabled>Choose Service</option>
+                                <div class="form-group w-full mb-4"><select id="Choose_Service" name="Choose_Service"
+                                        class="w-full p-2 border border-gray-300 rounded" required="">
+                                        <option value="">Choose Service</option>
                                         <option value="Mobile Application Development">Mobile App Development</option>
-                                        <option value="Website Development">Website Development</option>
+                                        <option value="Website Development" selected="">Website Development</option>
                                         <option value="Digital Marketing">Digital Marketing</option>
                                         <option value="Software Development">Software Development</option>
                                         <option value="UI UX Design">UI UX Design</option>
-                                    </select>
-                                </div>
-                                <div class="form-group w-full mb-4">
-                                    <textarea name="message" class="w-full p-2 border border-gray-300 rounded"
-                                        placeholder="How can I help you?" required>
-                                    </textarea>
-                                </div>
-                                <button type="submit"
+                                    </select></div>
+                                <div class="form-group w-full mb-4"><textarea id="message" name="message"
+                                        class="w-full p-2 border border-gray-300 rounded"
+                                        placeholder="How can I help you?" required=""></textarea></div><button
+                                    type="submit"
                                     class="submit-button w-full p-2 bg-blue-500 text-white rounded">Submit</button>
                             </div>
                         </form>
